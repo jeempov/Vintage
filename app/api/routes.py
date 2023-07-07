@@ -4,6 +4,7 @@ from models import db, User, Car, car_schema, cars_schema
 
 
 api = Blueprint('api', __name__, url_prefix='/api')
+# make a route for vintage cars
 
 @api.route('/cars', methods=['POST'])
 @token_required
